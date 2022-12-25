@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Item from './item/index'
+import Item from './item'
 import style from './List.module.scss';
 
 function List(){

@@ -2,16 +2,11 @@
 import React from 'react';
 import Item from './item'
 import style from './List.module.scss';
+import {useState} from 'react'
+import { ITasks } from '../../types/tasks';
 
-function List(){
-    const tasks = [{
-        task: 'React',
-        time: '02:00:00'
-    },
-    {
-        task: 'Javascript',
-        time: '01:00:00'
-    }]
+function List({tasks}: {tasks: ITasks[]} ){
+    
     return(
         <aside className= {style.listaTarefa}>
             <h2>Estudos do dia</h2>
